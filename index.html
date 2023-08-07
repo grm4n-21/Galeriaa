@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Galería de Fotos</h1>
+    <h3>Bienvenido a nuestra galería de fotos</h3>
+  </header>
+
+  <div class="container">
+    <div class="add-photo">
+      <h2>Agregar Foto</h2>
+       <form id="add-form"> 
+        <label for="title">Título:</label>
+        <input type="text" id="title" required>
+        <label for="description">Descripción:</label>
+        <textarea id="description" required></textarea>
+        <label for="image">Seleccionar imagen:</label>
+        <input type="file" id="image" required>
+        <button type="submit"class="btn-agregar">Agregar</button>
+      </form>
+    </div>
+   <div class="gallery" id="gallery">
+
+    </div>
+  </div>
+
+  <div class="modal" id="edit-modal">
+    <div class="modal-content">
+      <span class="close" id="edit-close-btn">&times;</span>
+      <h2>Editar Foto</h2>
+      <form id="edit-form">
+        <input type="hidden" id="edit-photo-id">
+        <label for="edit-title">Título:</label>
+        <input type="text" id="edit-title" required>
+        <label for="edit-description">Descripción:</label>
+        <textarea id="edit-description" required></textarea>
+        <button type="submit">Guardar</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>Todos los derechos reservados &copy; 2023 Galería de Fotos</p>
+    <p></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
