@@ -1,7 +1,7 @@
 let photos = [];
 
 
-// esto es  para mostrar las fotos
+//  mostrar 
 function displayPhotos(photos) {
   const gallery = document.getElementById('gallery');
   gallery.innerHTML = '';
